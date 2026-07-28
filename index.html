@@ -34,7 +34,7 @@
     }
     header {
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
     }
     header h1 {
       margin: 0 0 8px;
@@ -47,15 +47,20 @@
       color: var(--text-sub);
     }
     
-    /* Стилі для категорій */
+    /* Стиль категорій у вигляді стильних бейджиків */
     .category-section {
-      margin-bottom: 36px;
+      margin-bottom: 40px;
     }
     .category-title {
-      font-size: 22px;
-      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
       margin: 0 0 14px 4px;
-      color: var(--text-main);
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 18px;
+      font-weight: 700;
     }
     
     .cards {
@@ -91,7 +96,7 @@
       gap: 12px;
       font-size: 20px;
       font-weight: 600;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
     
     /* Стиль для іконок-логотипів */
@@ -105,20 +110,7 @@
     .app-sub {
       font-size: 15px;
       color: var(--text-sub);
-    }
-    
-    /* Стиль тегів */
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 8px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 13px;
-      font-weight: 500;
+      line-height: 1.4;
     }
     
     .donate-block {
@@ -178,191 +170,159 @@
   <main class="page">
     <header>
       <h1>Загрузка APK</h1>
-      <p>Приложения для Android&nbsp;TV и медиаприставок</p>
+      <p>Полезные приложения для Android&nbsp;TV и медиаприставок</p>
     </header>
 
-    <!-- Категорія 1: Плееры -->
-    <section class="category-section">
-      <h2 class="category-title">Плееры</h2>
-      <div class="cards">
-        <a class="app-card" href="https://github.com/apk-storage/downloader/releases/download/Player/Vimu-MediaPlayer-10.70-official.apk">
-          <div class="app-title">
-            <img class="app-logo" src="logo/vimu.png" alt="Vimu">
-            <span>Vimu Media Player</span>
-          </div>
-          <div class="app-sub">Статичная версия 10.70 (official). Прямая загрузка APK.</div>
-          <div class="tag">APK-файл</div>
-        </a>
-        <a class="app-card" href="#">
-          <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/nova.png" alt="Nova">
-            <span>Nova Video Player</span>
-          </div>
-          <div class="app-sub">Удобный видеоплеер с поддержкой сетевых папок.</div>
-          <div class="tag">Плейер</div>
-        </a>
-        <a class="app-card" href="#">
-          <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/vlc.png" alt="VLC">
-            <span>VLC for Android</span>
-          </div>
-          <div class="app-sub">Всеядный медиаплеер для любых форматов видео и аудио.</div>
-          <div class="tag">Плейер</div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Категорія 2: Кинозалы -->
+    <!-- Кинозалы -->
     <section class="category-section">
       <h2 class="category-title">Кинозалы</h2>
       <div class="cards">
-        <a class="app-card" href="https://github.com/lampa-app/LAMPA/releases/latest/download/app-lite-release.apk">
+        <a class="app-card" href="#">
           <div class="app-title">
             <img class="app-logo" src="logo/lampa.png" alt="Lampa">
             <span>Lampa</span>
           </div>
-          <div class="app-sub">Киноприложение, последняя доступная версия с GitHub Releases.</div>
-          <div class="tag">Автообновляемая ссылка</div>
+          <div class="app-sub">Красивое приложение с огромным выбором фильмов и сериалов, торренты и онлайн.</div>
         </a>
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/num.png" alt="Num">
-            <span>NUM (No More Ubatz)</span>
+            <img class="app-logo" src="logo/zona.png" alt="Zona">
+            <span>Zona</span>
           </div>
-          <div class="app-sub">Популярный каталог фильмов и сериалов для Android TV.</div>
-          <div class="tag">Каталог</div>
+          <div class="app-sub">31 000 популярнейших фильмов с описанием и рейтингом.</div>
         </a>
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/kinotrend.png" alt="Kinotrend">
-            <span>Kinotrend</span>
+            <img class="app-logo" src="logo/kinotrend.png" alt="KinoTrend">
+            <span>KinoTrend</span>
           </div>
-          <div class="app-sub">Удобный неофициальный кинотеатр для медиаприставок.</div>
-          <div class="tag">Кинозал</div>
+          <div class="app-sub">Только качественные по картинке и звуку релизы за последние 90 дней. Только торренты. Сериалов нет!</div>
+        </a>
+        <a class="app-card" href="#">
+          <div class="app-title">
+            <img class="app-logo" src="logo/num.png" alt="NUM">
+            <span>NUM</span>
+          </div>
+          <div class="app-sub">Отличное приложение для поиска фильмов и сериалов на самых популярных торрент-трекерах. Только торренты!</div>
+        </a>
+        <a class="app-card" href="#">
+          <div class="app-title">
+            <img class="app-logo" src="logo/lazymedia.png" alt="LazyMedia Deluxe">
+            <span>LazyMedia Deluxe</span>
+          </div>
+          <div class="app-sub">Онлайн-кинотеатр с огромным выбором фильмов и сериалов, Только торренты!</div>
         </a>
       </div>
     </section>
 
-    <!-- Категорія 3: IPTV -->
+    <!-- Онлайн ТВ -->
     <section class="category-section">
-      <h2 class="category-title">IPTV</h2>
+      <h2 class="category-title">Онлайн ТВ</h2>
       <div class="cards">
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/televoix.png" alt="Televoix">
-            <span>Televoix</span>
+            <img class="app-logo" src="logo/ottplayfoss.png" alt="OTT-play FOSS">
+            <span>OTT-play FOSS</span>
           </div>
-          <div class="app-sub">Современный IPTV-плеер с красивым интерфейсом.</div>
-          <div class="tag">IPTV</div>
+          <div class="app-sub">Отличный IPTV плеер. Необходим свой плейлист.</div>
         </a>
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/ottplayer.png" alt="OTTPlayer">
-            <span>OTTPlayer</span>
+            <img class="app-logo" src="logo/ottplayalex.png" alt="OTT-play by Alex">
+            <span>OTT-play by Alex</span>
           </div>
-          <div class="app-sub">Проверенный плеер для просмотра интернет-телевидения.</div>
-          <div class="tag">IPTV</div>
+          <div class="app-sub">Отличный IPTV плеер. Необходим свой плейлист.</div>
         </a>
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/tivimate.png" alt="TiviMate">
-            <span>TiviMate IPTV Player</span>
+            <img class="app-logo" src="logo/drmplay.png" alt="DRM-Play">
+            <span>DRM-Play</span>
           </div>
-          <div class="app-sub">Лучший IPTV-плеер для Android TV с продвинутым функционалом.</div>
-          <div class="tag">IPTV</div>
+          <div class="app-sub">Отличный IPTV плеер. Необходим свой плейлист.</div>
+        </a>
+        <a class="app-card" href="#">
+          <div class="app-title">
+            <img class="app-logo" src="logo/iptvpro.png" alt="IPTV Pro">
+            <span>IPTV Pro</span>
+          </div>
+          <div class="app-sub">Классический «синий» IPTV-плеер, простой и доступный для освоения. Необходим свой плейлист.</div>
         </a>
       </div>
     </section>
 
-    <!-- Категорія 4: Файловый менеджер -->
+    <!-- Видеохостинг -->
     <section class="category-section">
-      <h2 class="category-title">Файловый менеджер</h2>
+      <h2 class="category-title">Видеохостинг</h2>
       <div class="cards">
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/xplore.png" alt="X-plore">
-            <span>X-plore File Manager</span>
+            <img class="app-logo" src="logo/smarttube.png" alt="SmartTube">
+            <span>SmartTube</span>
           </div>
-          <div class="app-sub">Мощный двухпанельный менеджер файлов с поддержкой облаков.</div>
-          <div class="tag">Утилита</div>
+          <div class="app-sub">Отличная замена штатному YouTube. Удобный интерфейс, автофреймрейт (для приставок), отсутствие рекламы и SponsorBlock. Стабильная версия.</div>
         </a>
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/mixplorer.png" alt="MiXplorer">
-            <span>MiXplorer Silver</span>
+            <img class="app-logo" src="logo/tizentube.png" alt="TizenTube Cobalt">
+            <span>TizenTube Cobalt</span>
           </div>
-          <div class="app-sub">Быстрый, плавный и многофункциональный файловый проводник.</div>
-          <div class="tag">Утилита</div>
+          <div class="app-sub">Приложение на базе платформы Cobalt, улучшает качество просмотра вашего любимого видеохостинга за счет удаления рекламы.</div>
         </a>
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/fx.png" alt="FX">
-            <span>FX File Explorer</span>
+            <img class="app-logo" src="logo/youtube.png" alt="YouTube for Android TV">
+            <span>YouTube for Android TV</span>
           </div>
-          <div class="app-sub">Удобный проводник файлов с адаптацией под телевизоры.</div>
-          <div class="tag">Утилита</div>
+          <div class="app-sub">Официальное приложение YouTube.</div>
         </a>
       </div>
     </section>
 
-    <!-- Категорія 5: Торрент -->
+    <!-- Видеплееры -->
     <section class="category-section">
-      <h2 class="category-title">Торрент</h2>
+      <h2 class="category-title">Видеплееры</h2>
+      <div class="cards">
+        <a class="app-card" href="https://github.com/apk-storage/downloader/releases/download/Player/Vimu-MediaPlayer-10.70-official.apk">
+          <div class="app-title">
+            <img class="app-logo" src="logo/vimu.png" alt="Vimu Media Player">
+            <span>Vimu Media Player</span>
+          </div>
+          <div class="app-sub">Лучший плеер для просмотра видео на Android TV.</div>
+        </a>
+        <a class="app-card" href="#">
+          <div class="app-title">
+            <img class="app-logo" src="logo/mxplayer.png" alt="MX-Player">
+            <span>MX-Player</span>
+          </div>
+          <div class="app-sub">Популярный видеоплеер.</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Полезное -->
+    <section class="category-section">
+      <h2 class="category-title">Полезное</h2>
       <div class="cards">
         <a class="app-card" href="https://github.com/YouROK/TorrServe/releases/download/MatriX.136.Client/TorrServe_MatriX.136.Client-release.apk">
           <div class="app-title">
-            <img class="app-logo" src="logo/torserve.png" alt="TorrServe">
-            <span>Torrserve MatriX 136</span>
+            <img class="app-logo" src="logo/torserve.png" alt="TorrServe MatriX Client">
+            <span>TorrServe MatriX Client</span>
           </div>
-          <div class="app-sub">Универсальная сборка Torrserve Matrix для Android.</div>
-          <div class="tag">Автообновление через GitHub</div>
+          <div class="app-sub">Это ваш помощник для просмотров торрент-файлов без предварительного скачивания, то есть сразу.</div>
         </a>
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/flud.png" alt="Flud">
-            <span>Flud (Torrent Downloader)</span>
+            <img class="app-logo" src="logo/xplore.png" alt="X-plore File Manager">
+            <span>X-plore File Manager</span>
           </div>
-          <div class="app-sub">Простой и красивый клиенты для загрузки торрентов.</div>
-          <div class="tag">Торрент</div>
+          <div class="app-sub">Один из лучших файловых менеджеров.</div>
         </a>
         <a class="app-card" href="#">
           <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/bgtorrent.png" alt="Background Torrent">
-            <span>Remote Torrent Client</span>
+            <img class="app-logo" src="logo/tinstaller.png" alt="TInstaller">
+            <span>TInstaller</span>
           </div>
-          <div class="app-sub">Управление торрентами прямо с экрана приставки.</div>
-          <div class="tag">Торрент</div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Категорія 6: ТВ -->
-    <section class="category-section">
-      <h2 class="category-title">ТВ</h2>
-      <div class="cards">
-        <a class="app-card" href="#">
-          <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/hdvideobox.png" alt="HD Video Box">
-            <span>SmartTube</span>
-          </div>
-          <div class="app-sub">Клиент для YouTube без рекламы на Android TV.</div>
-          <div class="tag">Видео</div>
-        </a>
-        <a class="app-card" href="#">
-          <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/lazymedia.png" alt="LazyMedia Deluxe">
-            <span>LazyMedia Deluxe</span>
-          </div>
-          <div class="app-sub">Оболочка для просмотра видеоконтента из различных источников.</div>
-          <div class="tag">ТВ</div>
-        </a>
-        <a class="app-card" href="#">
-          <div class="app-title">
-            <img class="app-logo" src="https://apk-storage.github.io/downloader/images/vkvideo.png" alt="VK Video">
-            <span>VK Видео (TV)</span>
-          </div>
-          <div class="app-sub">Официальное приложение видеоплатформы для телевизоров.</div>
-          <div class="tag">ТВ</div>
+          <div class="app-sub">Оригинальное приложение Technozon Installer. Установка приложений в один клик по ссылкам загрузок из файла пользователя.</div>
         </a>
       </div>
     </section>
