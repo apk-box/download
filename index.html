@@ -36,14 +36,9 @@
       margin-bottom: 36px;
     }
     header h1 {
-      margin: 0 0 8px;
+      margin: 0;
       font-size: 40px;
       font-weight: 700;
-    }
-    header p {
-      margin: 0;
-      font-size: 18px;
-      color: var(--text-sub);
     }
     
     .category-section {
@@ -114,46 +109,13 @@
       color: var(--text-sub);
       line-height: 1.4;
     }
-    
-    .donate-block {
-      margin-top: 40px;
-      padding: 24px 24px 30px;
-      border-radius: var(--radius-lg);
-      background: rgba(255,255,255,0.9);
-      box-shadow: var(--shadow-soft);
-      text-align: center;
-      border: 0.5px solid #7b1fa2;
-    }
-    .donate-title {
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-    .donate-sub {
-      font-size: 15px;
-      color: var(--text-sub);
-      margin-bottom: 18px;
-    }
-    .donate-qr-wrapper {
-      display: inline-block;
-      padding: 12px;
-      border-radius: 26px;
-      background: linear-gradient(145deg, #ffffff, #f8f5ff);
-      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.03), 0 16px 40px rgba(138, 43, 226, 0.08);
-    }
-    .donate-qr {
-      display: block;
-      width: 220px;
-      height: 220px;
-      border-radius: 16px;
-      background: #ffffff;
-    }
+
     @media (max-width: 720px) {
       body {
         padding: 24px 10px;
       }
       header h1 {
-        font-size: 30px;
+        font-size: 26px;
       }
       .app-card {
         padding: 16px 18px;
@@ -161,18 +123,13 @@
       .app-title {
         font-size: 18px;
       }
-      .donate-qr {
-        width: 200px;
-        height: 200px;
-      }
     }
   </style>
 </head>
 <body>
   <main class="page">
     <header>
-      <h1>Загрузка APK</h1>
-      <p>Полезные приложения для Android&nbsp;TV и медиаприставок</p>
+      <h1>Полезные приложения для Android&nbsp;TV и медиаприставок</h1>
     </header>
 
     <!-- Кинозалы -->
@@ -326,14 +283,6 @@
           </div>
           <div class="app-sub">Оригинальное приложение Technozon Installer. Установка приложений в один клик по ссылкам загрузок из файла пользователя.</div>
         </a>
-      </div>
-    </section>
-
-    <section class="donate-block" aria-label="Поддержать проект">
-      <div class="donate-title">Угостить кофе</div>
-      <div class="donate-sub">Откройте камеру телефона и наведите её на QR-код</div>
-      <div class="donate-qr-wrapper">
-        <img class="donate-qr" src="qr-code.png" alt="QR-код для доната">
       </div>
     </section>
   </main>
